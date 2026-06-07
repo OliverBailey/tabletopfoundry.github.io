@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabletop Foundry – Coming Soon</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --dark: #0e0e12;
+      --dark-mid: #1a1a22;
+      --dark-card: #22222e;
+      --text: #d4d0c8;
+      --text-muted: #7a7870;
+    }
+
+    body {
+      background-color: var(--dark);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(201,168,76,0.04) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(201,168,76,0.03) 0%, transparent 50%);
+    }
+
+    .container {
+      max-width: 680px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo-mark {
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+
+    .logo-mark svg {
+      width: 64px;
+      height: 64px;
+      filter: drop-shadow(0 0 18px rgba(201,168,76,0.35));
+    }
+
+    .brand {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: normal;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 1.6rem auto;
+    }
+
+    .coming-soon {
+      font-family: 'Georgia', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2rem;
+    }
+
+    .tagline {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      line-height: 1.75;
+      color: var(--text);
+      font-style: italic;
+      margin-bottom: 3rem;
+      opacity: 0.85;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .feature {
+      background: var(--dark-card);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 4px;
+      padding: 1.25rem 1rem;
+      transition: border-color 0.3s;
+    }
+
+    .feature:hover {
+      border-color: rgba(201,168,76,0.4);
+    }
+
+    .feature-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-title {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.35rem;
+    }
+
+    .feature-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .footer {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      border-top: 1px solid rgba(201,168,76,0.08);
+      padding-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo-mark">
+      <!-- Anvil / forge mark -->
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 42 L18 28 L46 28 L54 42 Z" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linejoin="round"/>
+        <rect x="22" y="18" width="20" height="10" rx="2" fill="none" stroke="#c9a84c" stroke-width="2"/>
+        <rect x="26" y="42" width="12" height="6" rx="1" fill="none" stroke="#c9a84c" stroke-width="2"/>
+        <line x1="32" y1="12" x2="32" y2="18" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
+        <path d="M28 10 Q32 6 36 10" stroke="#c9a84c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <h1 class="brand">Tabletop <span>Foundry</span></h1>
+    <p class="coming-soon">Coming Soon</p>
+
+    <div class="divider"></div>
+
+    <p class="tagline">
+      Premium upgrade components crafted for the discerning gamer.<br />
+      UV printed tokens, laser engraved boards &amp; bespoke gaming pieces.
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🎨</div>
+        <div class="feature-title">UV Printing</div>
+        <div class="feature-desc">Vivid full-colour tokens &amp; components printed directly onto premium materials</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">Laser Engraving</div>
+        <div class="feature-desc">Precision engraved boards, trays &amp; inserts in wood, acrylic &amp; more</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">♟️</div>
+        <div class="feature-title">Custom Upgrades</div>
+        <div class="feature-desc">Replace cardboard with premium metal, wood &amp; resin game components</div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      &copy; 2026 Tabletop Foundry
+    </footer>
+
+  </div>
+
+
+</body>
+</html>
