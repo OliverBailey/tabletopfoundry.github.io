@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tabletopfoundry.github.io/sitemap.xml
+Sitemap: https://tabletopfoundry.co.uk/sitemap.xml
